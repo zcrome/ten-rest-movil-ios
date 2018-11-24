@@ -1,0 +1,6 @@
+framework module Pods_comensal {
+  umbrella header "Pods-comensal-umbrella.h"
+
+  export *
+  module * { export * }
+}
