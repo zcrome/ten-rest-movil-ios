@@ -45,7 +45,7 @@ extension RestaurantsViewController: UITableViewDelegate{
     
     controller.restaurant = restaurants[indexPath.row]
     
-    self.present(controller, animated: true, completion: nil)
+    self.navigationController?.pushViewController(controller, animated: true)
     
   }
   
