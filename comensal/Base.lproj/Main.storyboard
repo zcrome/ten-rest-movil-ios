@@ -54,6 +54,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="owk-Jh-8Rl" kind="show" id="4WG-8k-TtU"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -80,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="4152.8000000000002" y="205.54722638680661"/>
         </scene>
-        <!--View Controller-->
+        <!--Raiting View Controller-->
         <scene sceneID="d8L-45-vWC">
             <objects>
-                <viewController id="owk-Jh-8Rl" sceneMemberID="viewController">
+                <viewController id="owk-Jh-8Rl" customClass="RaitingViewController" customModule="comensal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cc0-nP-Vlp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mKC-I7-2CE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5121" y="206"/>
+            <point key="canvasLocation" x="4932" y="206"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5yr-SI-ezB">

@@ -6,7 +6,7 @@ target 'comensal' do
   use_frameworks!
 
   pod "ILLoginKit"
-
+  pod 'Eureka'
 
   # Pods for comensal
 

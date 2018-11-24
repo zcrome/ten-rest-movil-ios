@@ -17,6 +17,7 @@
 		F47B56C221A8E28400679C95 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C121A8E28400679C95 /* LoginCoordinator.swift */; };
 		F47B56C421A8EC9500679C95 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C321A8EC9500679C95 /* RestaurantsViewController.swift */; };
 		F47B56C721A8EE5000679C95 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C621A8EE5000679C95 /* File.swift */; };
+		F4CBE41021A8FCA000AD2F29 /* RaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE40F21A8FCA000AD2F29 /* RaitingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F47B56C121A8E28400679C95 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		F47B56C321A8EC9500679C95 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
 		F47B56C621A8EE5000679C95 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F4CBE40F21A8FCA000AD2F29 /* RaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				F47B56C121A8E28400679C95 /* LoginCoordinator.swift */,
 				F453A2E921A8D9F800486A37 /* MenuViewController.swift */,
 				F47B56C321A8EC9500679C95 /* RestaurantsViewController.swift */,
+				F4CBE40F21A8FCA000AD2F29 /* RaitingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-comensal/Pods-comensal-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ILLoginKit/ILLoginKit.framework",
@@ -213,6 +217,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ILLoginKit.framework",
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CBE41021A8FCA000AD2F29 /* RaitingViewController.swift in Sources */,
 				F453A2D921A8CB0700486A37 /* ViewController.swift in Sources */,
 				F47B56C721A8EE5000679C95 /* File.swift in Sources */,
 				F453A2EA21A8D9F800486A37 /* MenuViewController.swift in Sources */,
