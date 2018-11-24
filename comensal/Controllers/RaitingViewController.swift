@@ -12,6 +12,8 @@ import Eureka
 
 class RaitingViewController: FormViewController {
   
+  var restaurant: Restaurant = Restaurant()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     form +++ Section("Ingrese los siguientes campos")
@@ -57,11 +59,22 @@ class RaitingViewController: FormViewController {
           let sugerencias: TextAreaRow? = self.form.rowBy(tag: "5")
           
           
-          print(satisfaccion?.value)
-          print(comidaSolicitada?.value)
-          print(numeroComensales?.value)
-          print(tieneQuejas?.value)
-          print(sugerencias?.value)
+          
+          
+          let raiting = Raiting(satisfaccion: satisfaccion!.value!,
+                                comidaSolicitada: comidaSolicitada!.value!,
+                                numeroComensales: "\(numeroComensales!.value!)" ,
+                                quejas: tieneQuejas!.value!,
+                                sugerencias: sugerencias!.value!,
+                                comensalId: Comensal.share.idUser,
+                                restaurantId: self.restaurant.id)
+          
+          
+          TodoEndPoint.createRaiting(withTodo: raiting, userId: Comensal.share.idUser, restaurantId: self.restaurant.id, completionHandler: { (id, error) in
+            if let id = id{
+              self.navigationController?.popViewController(animated: true)
+            }
+          })
           
     }
     

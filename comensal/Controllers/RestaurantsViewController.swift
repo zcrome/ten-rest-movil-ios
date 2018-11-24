@@ -13,17 +13,41 @@ class RestaurantsViewController: UIViewController {
   
   @IBOutlet weak var tableview: UITableView!
   
-  var restaurants: [Restaurant] = [Restaurant(nombre: "HALO!")]
+  var restaurants: [Restaurant] = []
   
   
     override func viewDidLoad() {
         super.viewDidLoad()
+      
+      TodoEndPoint.getRestaurants { (restaurants, error) in
+        
+        if let restaurants = restaurants{
+          self.restaurants = restaurants
+          self.tableview.reloadData()
+        }
+      }
+      
     }
+  
 
 }
 
 
+
+
+
+
 extension RestaurantsViewController: UITableViewDelegate{
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+    let controller = storyboard?.instantiateViewController(withIdentifier: "RaitingViewController") as! RaitingViewController
+    
+    controller.restaurant = restaurants[indexPath.row]
+    
+    self.present(controller, animated: true, completion: nil)
+    
+  }
   
 }
 
@@ -36,7 +60,7 @@ extension RestaurantsViewController: UITableViewDataSource{
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableview.dequeueReusableCell(withIdentifier: "cell")!
     
-    cell.textLabel?.text = "HALOS"
+    cell.textLabel?.text = restaurants[indexPath.row].nombre
     
     return cell
   }

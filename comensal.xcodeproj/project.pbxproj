@@ -16,8 +16,12 @@
 		F453A2EA21A8D9F800486A37 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F453A2E921A8D9F800486A37 /* MenuViewController.swift */; };
 		F47B56C221A8E28400679C95 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C121A8E28400679C95 /* LoginCoordinator.swift */; };
 		F47B56C421A8EC9500679C95 /* RestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C321A8EC9500679C95 /* RestaurantsViewController.swift */; };
-		F47B56C721A8EE5000679C95 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C621A8EE5000679C95 /* File.swift */; };
+		F47B56C721A8EE5000679C95 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47B56C621A8EE5000679C95 /* Restaurant.swift */; };
 		F4CBE41021A8FCA000AD2F29 /* RaitingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE40F21A8FCA000AD2F29 /* RaitingViewController.swift */; };
+		F4CBE41321A92DD300AD2F29 /* TodoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE41221A92DD300AD2F29 /* TodoAPI.swift */; };
+		F4CBE41521A92E6300AD2F29 /* TodoEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE41421A92E6300AD2F29 /* TodoEndPoint.swift */; };
+		F4CBE41721A92F8600AD2F29 /* Comensal.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE41621A92F8600AD2F29 /* Comensal.swift */; };
+		F4CBE41921A9937200AD2F29 /* Raiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CBE41821A9937200AD2F29 /* Raiting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +38,12 @@
 		F453A2E921A8D9F800486A37 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F47B56C121A8E28400679C95 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		F47B56C321A8EC9500679C95 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
-		F47B56C621A8EE5000679C95 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		F47B56C621A8EE5000679C95 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F4CBE40F21A8FCA000AD2F29 /* RaitingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingViewController.swift; sourceTree = "<group>"; };
+		F4CBE41221A92DD300AD2F29 /* TodoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAPI.swift; sourceTree = "<group>"; };
+		F4CBE41421A92E6300AD2F29 /* TodoEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEndPoint.swift; sourceTree = "<group>"; };
+		F4CBE41621A92F8600AD2F29 /* Comensal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comensal.swift; sourceTree = "<group>"; };
+		F4CBE41821A9937200AD2F29 /* Raiting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raiting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +96,7 @@
 		F453A2D521A8CB0700486A37 /* comensal */ = {
 			isa = PBXGroup;
 			children = (
+				F4CBE41121A92D8500AD2F29 /* Network */,
 				F47B56C521A8EE4700679C95 /* Model */,
 				F47B56C021A8E27600679C95 /* Util */,
 				F453A2E821A8D9B000486A37 /* Controllers */,
@@ -122,9 +131,20 @@
 		F47B56C521A8EE4700679C95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F47B56C621A8EE5000679C95 /* File.swift */,
+				F47B56C621A8EE5000679C95 /* Restaurant.swift */,
+				F4CBE41621A92F8600AD2F29 /* Comensal.swift */,
+				F4CBE41821A9937200AD2F29 /* Raiting.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F4CBE41121A92D8500AD2F29 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F4CBE41221A92DD300AD2F29 /* TodoAPI.swift */,
+				F4CBE41421A92E6300AD2F29 /* TodoEndPoint.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,9 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4CBE41321A92DD300AD2F29 /* TodoAPI.swift in Sources */,
+				F4CBE41521A92E6300AD2F29 /* TodoEndPoint.swift in Sources */,
 				F4CBE41021A8FCA000AD2F29 /* RaitingViewController.swift in Sources */,
+				F4CBE41721A92F8600AD2F29 /* Comensal.swift in Sources */,
+				F4CBE41921A9937200AD2F29 /* Raiting.swift in Sources */,
 				F453A2D921A8CB0700486A37 /* ViewController.swift in Sources */,
-				F47B56C721A8EE5000679C95 /* File.swift in Sources */,
+				F47B56C721A8EE5000679C95 /* Restaurant.swift in Sources */,
 				F453A2EA21A8D9F800486A37 /* MenuViewController.swift in Sources */,
 				F453A2D721A8CB0700486A37 /* AppDelegate.swift in Sources */,
 				F47B56C421A8EC9500679C95 /* RestaurantsViewController.swift in Sources */,

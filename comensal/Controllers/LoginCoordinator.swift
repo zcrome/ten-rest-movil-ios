@@ -8,9 +8,21 @@
 import Foundation
 import ILLoginKit
 
+
+protocol LoginCoordinatorDelegate{
+  
+  func redirectToMain()
+  
+  func redirectoToList()
+  
+}
+
 class LoginCoordinator: ILLoginKit.LoginCoordinator {
   
   // MARK: - LoginCoordinator
+  
+  
+  var delegateCoord: LoginCoordinatorDelegate?
   
   override func start(animated: Bool = true) {
     configureAppearance()
@@ -57,12 +69,43 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
   override func login(email: String, password: String) {
     print("Login with: email =\(email) password = \(password)")
     
+    
+    TodoEndPoint.loginUser(email: email, password: password) { (token, idUser, error) in
+      
+      if let token = token, let idUser = idUser{
+        Comensal.share.token = token
+        Comensal.share.idUser = "\(idUser)"
+        
+        self.delegateCoord?.redirectoToList()
+      }
+      
+    }
+    
   }
   
   // Handle signup via your API
   override func signup(name: String, email: String, password: String) {
     print("Signup with: name = \(name) email =\(email) password = \(password)")
+    
+    
+    TodoEndPoint.createUser(username: name, email: email, password: password) { (idUser, emailExist, error) in
+      
+      
+      if let idUser = idUser{
+        self.delegateCoord?.redirectToMain()
+      }
+      
+    }
+    
+    
   }
+  
+  
+  
+  
+  
+  
+  
   
   // Handle Facebook login/signup via your API
   override func enterWithFacebook(profile: FacebookProfile) {

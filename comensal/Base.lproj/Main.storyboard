@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zcl-uZ-dzR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--Menu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="comensal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="BYZ-38-t0r" customClass="MenuViewController" customModule="comensal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,9 +54,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="owk-Jh-8Rl" kind="show" id="4WG-8k-TtU"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -86,7 +83,7 @@
         <!--Raiting View Controller-->
         <scene sceneID="d8L-45-vWC">
             <objects>
-                <viewController id="owk-Jh-8Rl" customClass="RaitingViewController" customModule="comensal" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RaitingViewController" id="owk-Jh-8Rl" customClass="RaitingViewController" customModule="comensal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cc0-nP-Vlp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,7 +98,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5yr-SI-ezB">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zcl-uZ-dzR" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navRestaurants" automaticallyAdjustsScrollViewInsets="NO" id="zcl-uZ-dzR" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fau-6o-BM5">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
