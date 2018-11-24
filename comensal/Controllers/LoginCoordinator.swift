@@ -56,6 +56,7 @@ class LoginCoordinator: ILLoginKit.LoginCoordinator {
   // Handle login via your API
   override func login(email: String, password: String) {
     print("Login with: email =\(email) password = \(password)")
+    
   }
   
   // Handle signup via your API
