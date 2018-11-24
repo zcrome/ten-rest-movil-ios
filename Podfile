@@ -7,6 +7,9 @@ target 'comensal' do
 
   pod "ILLoginKit"
   pod 'Eureka'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'Alamofire', '~> 4.7'
+
 
   # Pods for comensal
 

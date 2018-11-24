@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.7.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
@@ -13,29 +14,36 @@ PODS:
   - ILLoginKit (1.0.1):
     - FBSDKLoginKit (= 4.31.0)
     - Validator (= 3.0.2)
+  - SwiftyJSON (4.2.0)
   - Validator (3.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - Eureka
   - ILLoginKit
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - Bolts
     - Eureka
     - FBSDKCoreKit
     - FBSDKLoginKit
     - ILLoginKit
+    - SwiftyJSON
     - Validator
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Eureka: 6d711cb30ca333b4bc893110285a722ae3840114
   FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
   FBSDKLoginKit: 95a252ddffd6919c0f132a02292f0824616d8709
   ILLoginKit: 6f717fa907114986b6914d1502bf8bd40b3720e5
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Validator: bf211c1d71b3f910d230c09c70e62429d0fef63a
 
-PODFILE CHECKSUM: 8f87d9bfe32782b434830f80b85fd2bd6cd90942
+PODFILE CHECKSUM: 87607e74a82000a94727589aa4db59c2d7407f5e
 
 COCOAPODS: 1.5.3
